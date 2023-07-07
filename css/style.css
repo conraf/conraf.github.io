@@ -23,7 +23,7 @@ text-decoration:underline
 h1,h2,h3,h4,h5,h6 {
 font-weight:700;
 line-height:1em;
-font-family:"Avenir Next","Avenir","jost","Helvetica","Tahoma",sans-serif
+font-family:"Avenir Next","Avenir","jost","Helvetica","Tahoma",sans-serif;
 }
 h4,h5,h6{
 font-weight:bold
@@ -63,8 +63,18 @@ h6{
   z-index: 9999;
 }
 
+/* Logo */
+.logo {
+  position: absolute;
+  transform: translateX(+60%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
 .title h1 {
   padding-left: 224px;
+  color: #264255
 }
 /* Menu laterale */
 .sidebar {
@@ -88,7 +98,7 @@ h6{
 }
 .sidebar a {
   text-decoration: none;
-  color: #333;
+  color: #264255;
 }
 /* Contenitore principale */
 .timeline {
