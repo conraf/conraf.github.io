@@ -1,0 +1,199 @@
+/* Stile di base */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:"PT Serif","Garamond","Georgia",serif;
+  font-size:20px;
+  word-break:break-word;
+  line-height:1.5em;
+  /* max-width:52em; */
+  margin: 0;
+  padding: 0;
+}
+a {
+color:var(--link);
+text-decoration:none
+}
+a:hover,a:active {
+outline:0;
+cursor:pointer;
+text-decoration:underline
+}
+h1,h2,h3,h4,h5,h6 {
+font-weight:700;
+line-height:1em;
+font-family:"Avenir Next","Avenir","jost","Helvetica","Tahoma",sans-serif
+}
+h4,h5,h6{
+font-weight:bold
+}
+h1{
+    font-size:3em;
+    line-height:1.2em;
+    margin:0
+}
+h2{
+    margin:2em 0 1em;
+    font-size:2em
+}
+h3{
+    font-size:1.2em;
+    font-weight:600;
+    margin:0em 0 1em
+}
+h4{
+    font-size:.9em
+}
+h5{
+    font-size:.9em
+}
+h6{
+    font-size:.9em
+}
+/* Titolo */
+.title {
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  background-color: #F1C27B;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.title h1 {
+  padding-left: 224px;
+}
+/* Menu laterale */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 92px;
+  width: 200px;
+  height: 100%;
+  background-color: #FFD89C;
+  padding: 20px;
+  font-size:1.2em;
+  font-family:"Avenir Next","Avenir","jost","Helvetica","Tahoma",sans-serif
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin-bottom: 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+/* Contenitore principale */
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  margin-left: 250px; /* Larghezza del menu laterale */
+  margin-top: 0; /* Aggiunto per rimuovere il margine superiore */
+}
+/* Elemento di timeline */
+.timeline-item {
+  position: relative;
+  top: 92px;
+  padding: 20px 40px;
+  border-left: 4px solid #F1C27B;
+  /* background-color: #f9f9f9; */
+}
+/* Icona - Elemento 1 */
+.timeline-item.elemento1::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  height: calc(100% - 40px);
+  width: 20px;
+  background-color: #9BABB8;
+  border-radius: 10px; /* Aggiunto per avere i bordi arrotondati */
+}
+/* Icona - Elemento 2 */
+.timeline-item.elemento2::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  height: calc(100% - 40px);
+  width: 20px;
+  background-color: #85A389;
+  border-radius: 10px; /* Aggiunto per avere i bordi arrotondati */
+}
+/* Icona - Elemento 3 */
+.timeline-item.elemento3::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  height: calc(100% - 40px);
+  width: 20px;
+  background-color: #E97777;
+  border-radius: 10px; /* Aggiunto per avere i bordi arrotondati */
+}
+/* Icona - Elemento 4 */
+.timeline-item.elemento4::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  height: calc(100% - 40px);
+  width: 20px;
+  background-color: #E97777;
+  border-radius: 10px; /* Aggiunto per avere i bordi arrotondati */
+}
+/* Icona - Elemento 5 */
+.timeline-item.elemento5::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  height: calc(100% - 40px);
+  width: 20px;
+  background-color: #9BABB8;
+  border-radius: 10px; /* Aggiunto per avere i bordi arrotondati */
+}
+/* Icona - Elemento 6 */
+.timeline-item.elemento6::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  height: calc(100% - 40px);
+  width: 20px;
+  background-color: #E97777;
+  border-radius: 10px; /* Aggiunto per avere i bordi arrotondati */
+}
+/* Titolo */
+.timeline-item h3 {
+  margin-top: 0;
+  cursor: pointer;
+}
+/* Testo e img/immagine */
+.timeline-item .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.timeline-item .content img {
+  max-width: 100%;
+  height: auto;
+}
+/* Mostra contenuto quando il titolo viene cliccato */
+.timeline-item:target .content {
+  max-height: 500px; /* Altezza massima del contenuto */
+  transition: max-height 0.3s ease;
+}
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background-color: #7C96AB;
+  text-align: center;
+  font-size:0.8em;
+  font-family:"Avenir Next","Avenir","jost","Helvetica","Tahoma",sans-serif
+}
