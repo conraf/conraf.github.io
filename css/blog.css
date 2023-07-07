@@ -141,7 +141,7 @@ h6{
 }
 /* Mostra contenuto quando il titolo viene cliccato */
 .blog-item:target .content {
-  max-height: 500px; /* Altezza massima del contenuto */
+  max-height: 900px; /* Altezza massima del contenuto */
   transition: max-height 0.3s ease;
 }
 /* Elemento di timeline */
@@ -229,7 +229,7 @@ h6{
 }
 /* Mostra contenuto quando il titolo viene cliccato */
 .timeline-item:target .content {
-  max-height: 500px; /* Altezza massima del contenuto */
+  max-height: 900px; /* Altezza massima del contenuto */
   transition: max-height 0.3s ease;
 }
 /* Footer */
