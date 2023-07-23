@@ -1,8 +1,9 @@
 body {
-  --color-scol: #e97777;
-  --color-lav: #F4D160;
+  --color-scol: #D989B5;
+  --color-lav: #FFC95F;
   --color-form: #75C2F6;
   --color-gray: #DDE6ED;
+  --color-pers: #DDE6ED;
   
   margin: 0;
   background: #1D5D9B;
@@ -16,7 +17,7 @@ body {
 /* Style the navigation bar */
 .navbar {
   width: 100%;
-  background-color: #F4D160;
+  background-color: var(--color-form);
   overflow: auto;
 }
 
@@ -33,7 +34,7 @@ body {
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color: #e97777;
+  background-color: var(--color-scol);
 }
 
 /* Current/active navbar link */
@@ -129,11 +130,6 @@ h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.timeline summary:hover {
-  background: #f8f8f8;
-}
-
-
 
 .timeline li[data-color="scol"]:before {
   background-color: var(--color-scol);
@@ -165,6 +161,10 @@ h1 {
 
 .timeline li[data-color="gray"] summary {
   background-color: var(--color-gray);
+}
+
+.timeline li[data-color="pers"] summary {
+  background-color: var(--color-pers);
 }
 
 .timeline li.dx:before {
