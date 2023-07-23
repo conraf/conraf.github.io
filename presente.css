@@ -1,13 +1,13 @@
 body {
-  --color-red: #e97777;
-  --color-green: #F4D160;
-  --color-blue: #75C2F6;
+  --color-scol: #e97777;
+  --color-lav: #F4D160;
+  --color-form: #75C2F6;
   --color-gray: #DDE6ED;
   
   margin: 0;
   background: #1D5D9B;
   color: #333;
-  font-family: 'Lato', sans-serif;
+  font-family: tahoma, sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,7 +42,7 @@ body {
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on small screens */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .logo {
     display: none;
   }
@@ -135,32 +135,32 @@ h1 {
 
 
 
-.timeline li[data-color="red"]:before {
-  background-color: var(--color-red);
+.timeline li[data-color="scol"]:before {
+  background-color: var(--color-scol);
 }
 
-.timeline li[data-color="green"]:before {
-  background-color: var(--color-green);
+.timeline li[data-color="lav"]:before {
+  background-color: var(--color-lav);
 }
 
-.timeline li[data-color="blue"]:before {
-  background-color: var(--color-blue);
+.timeline li[data-color="form"]:before {
+  background-color: var(--color-form);
 }
 
 .timeline li[data-color="gray"]:before {
   background-color: var(--color-gray);
 }
 
-.timeline li[data-color="red"] summary {
-  background-color: var(--color-red);
+.timeline li[data-color="scol"] summary {
+  background-color: var(--color-scol);
 }
 
-.timeline li[data-color="green"] summary {
-  background-color: var(--color-green);
+.timeline li[data-color="lav"] summary {
+  background-color: var(--color-lav);
 }
 
-.timeline li[data-color="blue"] summary {
-  background-color: var(--color-blue);
+.timeline li[data-color="form"] summary {
+  background-color: var(--color-form);
 }
 
 .timeline li[data-color="gray"] summary {
