@@ -1,0 +1,242 @@
+body {
+  --color-scol: #D989B5;
+  --color-lav: #FFC95F;
+  --color-form: #75C2F6;
+  --color-gray: #DDE6ED;
+  --color-pers: #DDE6ED;
+  
+  margin: 0;
+  background: #1D5D9B;
+  color: #333;
+  font-family: tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: var(--color-form);
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 18px;
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: var(--color-scol);
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #1D5D9B;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on small screens */
+@media screen and (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+  right: 10px;
+  padding: 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+h1 {
+  padding-top: 30px;
+  color: #888888;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper a {
+  color: black;
+}
+
+.legenda {
+  padding: 12px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+  width: 100%;
+}
+
+.timeline li {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+}
+
+.timeline .panel {
+  width: 46%;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+}
+
+.timeline p {
+  padding: 0 20px 10px 20px;
+}
+
+.timeline summary {
+  display: block;
+  user-select: none;
+  cursor: pointer;
+  color: black;
+  text-shadow: 1px 1px 2px #ffffff;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 0px;
+  transition: all 600ms cubic-bezier(0.2, 1, 0.3, 1);
+  font-weight: 600;
+}
+
+.timeline .panel[open] summary {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  content: "";
+  width: 4px;
+  background-color: #ffffff;
+}
+
+.timeline li:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 0%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  height: 100%;
+  transform: translate(-50%, -50%) scaleY(0);
+  transform-origin: center bottom;
+  transition: transform 0.3s ease;
+}
+
+.timeline li[data-color="scol"]:before {
+  background-color: var(--color-scol);
+}
+
+.timeline li[data-color="lav"]:before {
+  background-color: var(--color-lav);
+}
+
+.timeline li[data-color="form"]:before {
+  background-color: var(--color-form);
+}
+
+.timeline li[data-color="gray"]:before {
+  background-color: var(--color-gray);
+}
+
+.timeline li[data-color="scol"] summary {
+  background-color: var(--color-scol);
+}
+
+.timeline li[data-color="lav"] summary {
+  background-color: var(--color-lav);
+}
+
+.timeline li[data-color="form"] summary {
+  background-color: var(--color-form);
+}
+
+.timeline li[data-color="gray"] summary {
+  background-color: var(--color-gray);
+}
+
+.timeline li.dx:before {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+}
+
+.timeline li.sx:before {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.timeline li.dx .panel {
+  margin-left: auto;
+}
+
+.timeline li.sx .panel {
+  margin-right: auto;
+}
+
+.timeline li.dx summary {
+  text-align: right;
+}
+
+.timeline li.sx summary {
+  text-align: left;
+}
+
+.timeline li.dx p {
+  text-align: right;
+}
+
+.timeline li.sx p {
+  text-align: left;
+}
+
+
+/* Tabelle */
+.timeline-item .content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.scol-cell {
+  background-color: var(--color-scol);
+}
+
+.lav-cell {
+  background-color: var(--color-lav);
+}
+
+.form-cell {
+  background-color: var(--color-form);
+}
