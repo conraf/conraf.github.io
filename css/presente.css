@@ -63,6 +63,19 @@ body {
   border-radius: 50%;
 }
 
+/* ICON */
+div.icon-sx {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+div.icon-dx {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
 h1 {
   padding-top: 30px;
   color: #888888;
