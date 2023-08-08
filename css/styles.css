@@ -81,6 +81,7 @@ h1 {
   color: #888888;
 }
 
+/* WRAPPER */
 .wrapper {
   width: 100%;
   max-width: 1000px;
@@ -92,12 +93,14 @@ h1 {
   color: black;
 }
 
+/* LEGENDA */
 .legenda {
   padding: 12px;
   width: 100%;
   border-collapse: collapse;
 }
 
+/* TIMELINE */
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -141,7 +144,6 @@ h1 {
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 
 .timeline:before {
   top: 0;
@@ -252,4 +254,122 @@ h1 {
 
 .form-cell {
   background-color: var(--color-form);
+}
+
+
+/* TIMELINE-PRESENTE */
+.timeline-pres {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-pres li {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+}
+
+.timeline-pres .panel {
+  width: 750px;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+}
+
+.timeline-pres p {
+  padding: 0 20px 10px 20px;
+}
+
+.timeline-pres summary {
+  display: block;
+  user-select: none;
+  cursor: pointer;
+  color: black;
+  text-shadow: 1px 1px 2px #ffffff;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 0px;
+  transition: all 600ms cubic-bezier(0.2, 1, 0.3, 1);
+  font-weight: 600;
+}
+
+.timeline-pres .panel[open] summary {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.timeline-pres li[data-color="scol"]:before {
+  background-color: var(--color-scol);
+}
+
+.timeline-pres li[data-color="lav"]:before {
+  background-color: var(--color-lav);
+}
+
+.timeline-pres li[data-color="form"]:before {
+  background-color: var(--color-form);
+}
+
+.timeline-pres li[data-color="gray"]:before {
+  background-color: var(--color-gray);
+}
+
+.timeline-pres li[data-color="scol"] summary {
+  background-color: var(--color-scol);
+}
+
+.timeline-pres li[data-color="lav"] summary {
+  background-color: var(--color-lav);
+}
+
+.timeline-pres li[data-color="form"] summary {
+  background-color: var(--color-form);
+}
+
+.timeline-pres li[data-color="gray"] summary {
+  background-color: var(--color-gray);
+}
+
+.timeline-pres li[data-color="pers"] summary {
+  background-color: var(--color-pers);
+}
+
+.timeline-pres li.dx:before {
+  left: auto;
+  right: 80%;
+  transform: translateX(50%) translateY(-50%);
+}
+
+.timeline-pres li.sx:before {
+  left: 80%;
+  right: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.timeline-pres li.dx .panel {
+  margin-left: auto;
+}
+
+.timeline-pres li.sx .panel {
+  margin-right: auto;
+}
+
+.timeline-pres li.dx summary {
+  text-align: right;
+}
+
+.timeline-pres li.sx summary {
+  text-align: left;
+}
+
+.timeline-pres li.dx p {
+  text-align: right;
+}
+
+.timeline-pres li.sx p {
+  text-align: left;
 }
