@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>FT - Passato</title>
+  <title>Franco Tamoni — Passato</title>
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="view-transition" content="same-origin">
+  <meta name="description" content="Percorso professionale e formativo di Franco Tamoni: insegnante, filmmaker, informatico.">
+  <meta property="og:title" content="Franco Tamoni — Passato">
+  <meta property="og:description" content="Percorso professionale e formativo di Franco Tamoni.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/ft_logo.jpg">
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Load an icon library -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -20,24 +25,142 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<!-- FontAwesome 4 sprite — SIL OFL license -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-music" viewBox="0 0 1536 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1536 1312v-1120q0 -50 -34 -89t-86 -60.5t-103.5 -32t-96.5 -10.5t-96.5 10.5t-103.5 32t-86 60.5t-34 89t34 89t86 60.5t103.5 32t96.5 10.5q105 0 192 -39v537l-768 -237v-709q0 -50 -34 -89t-86 -60.5t-103.5 -32t-96.5 -10.5t-96.5 10.5t-103.5 32t-86 60.5t-34 89
+t34 89t86 60.5t103.5 32t96.5 10.5q105 0 192 -39v967q0 31 19 56.5t49 35.5l832 256q12 4 28 4q40 0 68 -28t28 -68z"/>
+  </symbol>
+  <symbol id="icon-book" viewBox="0 0 1664 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1639 1058q40 -57 18 -129l-275 -906q-19 -64 -76.5 -107.5t-122.5 -43.5h-923q-77 0 -148.5 53.5t-99.5 131.5q-24 67 -2 127q0 4 3 27t4 37q1 8 -3 21.5t-3 19.5q2 11 8 21t16.5 23.5t16.5 23.5q23 38 45 91.5t30 91.5q3 10 0.5 30t-0.5 28q3 11 17 28t17 23
+q21 36 42 92t25 90q1 9 -2.5 32t0.5 28q4 13 22 30.5t22 22.5q19 26 42.5 84.5t27.5 96.5q1 8 -3 25.5t-2 26.5q2 8 9 18t18 23t17 21q8 12 16.5 30.5t15 35t16 36t19.5 32t26.5 23.5t36 11.5t47.5 -5.5l-1 -3q38 9 51 9h761q74 0 114 -56t18 -130l-274 -906
+q-36 -119 -71.5 -153.5t-128.5 -34.5h-869q-27 0 -38 -15q-11 -16 -1 -43q24 -70 144 -70h923q29 0 56 15.5t35 41.5l300 987q7 22 5 57q38 -15 59 -43zM575 1056q-4 -13 2 -22.5t20 -9.5h608q13 0 25.5 9.5t16.5 22.5l21 64q4 13 -2 22.5t-20 9.5h-608q-13 0 -25.5 -9.5
+t-16.5 -22.5zM492 800q-4 -13 2 -22.5t20 -9.5h608q13 0 25.5 9.5t16.5 22.5l21 64q4 13 -2 22.5t-20 9.5h-608q-13 0 -25.5 -9.5t-16.5 -22.5z"/>
+  </symbol>
+  <symbol id="icon-video" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1792 1184v-1088q0 -42 -39 -59q-13 -5 -25 -5q-27 0 -45 19l-403 403v-166q0 -119 -84.5 -203.5t-203.5 -84.5h-704q-119 0 -203.5 84.5t-84.5 203.5v704q0 119 84.5 203.5t203.5 84.5h704q119 0 203.5 -84.5t84.5 -203.5v-165l403 402q18 19 45 19q12 0 25 -5
+q39 -17 39 -59z"/>
+  </symbol>
+  <symbol id="icon-image" viewBox="0 0 1920 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M640 960q0 -80 -56 -136t-136 -56t-136 56t-56 136t56 136t136 56t136 -56t56 -136zM1664 576v-448h-1408v192l320 320l160 -160l512 512zM1760 1280h-1600q-13 0 -22.5 -9.5t-9.5 -22.5v-1216q0 -13 9.5 -22.5t22.5 -9.5h1600q13 0 22.5 9.5t9.5 22.5v1216
+q0 13 -9.5 22.5t-22.5 9.5zM1920 1248v-1216q0 -66 -47 -113t-113 -47h-1600q-66 0 -113 47t-47 113v1216q0 66 47 113t113 47h1600q66 0 113 -47t47 -113z"/>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 1664 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1408 606v-318q0 -119 -84.5 -203.5t-203.5 -84.5h-832q-119 0 -203.5 84.5t-84.5 203.5v832q0 119 84.5 203.5t203.5 84.5h832q63 0 117 -25q15 -7 18 -23q3 -17 -9 -29l-49 -49q-10 -10 -23 -10q-3 0 -9 2q-23 6 -45 6h-832q-66 0 -113 -47t-47 -113v-832
+q0 -66 47 -113t113 -47h832q66 0 113 47t47 113v254q0 13 9 22l64 64q10 10 23 10q6 0 12 -3q20 -8 20 -29zM1639 1095l-814 -814q-24 -24 -57 -24t-57 24l-430 430q-24 24 -24 57t24 57l110 110q24 24 57 24t57 -24l263 -263l647 647q24 24 57 24t57 -24l110 -110
+q24 -24 24 -57t-24 -57z"/>
+  </symbol>
+  <symbol id="icon-info" viewBox="0 0 1536 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1024 160v160q0 14 -9 23t-23 9h-96v512q0 14 -9 23t-23 9h-320q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23t23 -9h96v-320h-96q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23t23 -9h448q14 0 23 9t9 23zM896 1056v160q0 14 -9 23t-23 9h-192q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23
+t23 -9h192q14 0 23 9t9 23zM1536 640q0 -209 -103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103t385.5 -103t279.5 -279.5t103 -385.5z"/>
+  </symbol>
+  <symbol id="icon-briefcase" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M640 1280h512v128h-512v-128zM1792 640v-480q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v480h672v-160q0 -26 19 -45t45 -19h320q26 0 45 19t19 45v160h672zM1024 640v-128h-256v128h256zM1792 1120v-384h-1792v384q0 66 47 113t113 47h352v160q0 40 28 68
+t68 28h576q40 0 68 -28t28 -68v-160h352q66 0 113 -47t47 -113z"/>
+  </symbol>
+  <symbol id="icon-users" viewBox="0 0 1920 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M593 640q-162 -5 -265 -128h-134q-82 0 -138 40.5t-56 118.5q0 353 124 353q6 0 43.5 -21t97.5 -42.5t119 -21.5q67 0 133 23q-5 -37 -5 -66q0 -139 81 -256zM1664 3q0 -120 -73 -189.5t-194 -69.5h-874q-121 0 -194 69.5t-73 189.5q0 53 3.5 103.5t14 109t26.5 108.5
+t43 97.5t62 81t85.5 53.5t111.5 20q10 0 43 -21.5t73 -48t107 -48t135 -21.5t135 21.5t107 48t73 48t43 21.5q61 0 111.5 -20t85.5 -53.5t62 -81t43 -97.5t26.5 -108.5t14 -109t3.5 -103.5zM640 1280q0 -106 -75 -181t-181 -75t-181 75t-75 181t75 181t181 75t181 -75
+t75 -181zM1344 896q0 -159 -112.5 -271.5t-271.5 -112.5t-271.5 112.5t-112.5 271.5t112.5 271.5t271.5 112.5t271.5 -112.5t112.5 -271.5zM1920 671q0 -78 -56 -118.5t-138 -40.5h-134q-103 123 -265 128q81 117 81 256q0 29 -5 66q66 -23 133 -23q59 0 119 21.5t97.5 42.5
+t43.5 21q124 0 124 -353zM1792 1280q0 -106 -75 -181t-181 -75t-181 75t-75 181t75 181t181 75t181 -75t75 -181z"/>
+  </symbol>
+  <symbol id="icon-flask" viewBox="0 0 1664 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1527 88q56 -89 21.5 -152.5t-140.5 -63.5h-1152q-106 0 -140.5 63.5t21.5 152.5l503 793v399h-64q-26 0 -45 19t-19 45t19 45t45 19h512q26 0 45 -19t19 -45t-19 -45t-45 -19h-64v-399zM748 813l-272 -429h712l-272 429l-20 31v37v399h-128v-399v-37z"/>
+  </symbol>
+  <symbol id="icon-envelope" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1792 826v-794q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v794q44 -49 101 -87q362 -246 497 -345q57 -42 92.5 -65.5t94.5 -48t110 -24.5h1h1q51 0 110 24.5t94.5 48t92.5 65.5q170 123 498 345q57 39 100 87zM1792 1120q0 -79 -49 -151t-122 -123
+q-376 -261 -468 -325q-10 -7 -42.5 -30.5t-54 -38t-52 -32.5t-57.5 -27t-50 -9h-1h-1q-23 0 -50 9t-57.5 27t-52 32.5t-54 38t-42.5 30.5q-91 64 -262 182.5t-205 142.5q-62 42 -117 115.5t-55 136.5q0 78 41.5 130t118.5 52h1472q65 0 112.5 -47t47.5 -113z"/>
+  </symbol>
+  <symbol id="icon-display" viewBox="0 0 1920 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1792 544v832q0 13 -9.5 22.5t-22.5 9.5h-1600q-13 0 -22.5 -9.5t-9.5 -22.5v-832q0 -13 9.5 -22.5t22.5 -9.5h1600q13 0 22.5 9.5t9.5 22.5zM1920 1376v-1088q0 -66 -47 -113t-113 -47h-544q0 -37 16 -77.5t32 -71t16 -43.5q0 -26 -19 -45t-45 -19h-512q-26 0 -45 19
+t-19 45q0 14 16 44t32 70t16 78h-544q-66 0 -113 47t-47 113v1088q0 66 47 113t113 47h1600q66 0 113 -47t47 -113z"/>
+  </symbol>
+  <symbol id="icon-tablet" viewBox="0 0 1152 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M640 128q0 26 -19 45t-45 19t-45 -19t-19 -45t19 -45t45 -19t45 19t19 45zM1024 288v960q0 13 -9.5 22.5t-22.5 9.5h-832q-13 0 -22.5 -9.5t-9.5 -22.5v-960q0 -13 9.5 -22.5t22.5 -9.5h832q13 0 22.5 9.5t9.5 22.5zM1152 1248v-1088q0 -66 -47 -113t-113 -47h-832
+q-66 0 -113 47t-47 113v1088q0 66 47 113t113 47h832q66 0 113 -47t47 -113z"/>
+  </symbol>
+  <symbol id="icon-smile" viewBox="0 0 1536 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1134 461q-37 -121 -138 -195t-228 -74t-228 74t-138 195q-8 25 4 48.5t38 31.5q25 8 48.5 -4t31.5 -38q25 -80 92.5 -129.5t151.5 -49.5t151.5 49.5t92.5 129.5q8 26 32 38t49 4t37 -31.5t4 -48.5zM640 896q0 -53 -37.5 -90.5t-90.5 -37.5t-90.5 37.5t-37.5 90.5
+t37.5 90.5t90.5 37.5t90.5 -37.5t37.5 -90.5zM1152 896q0 -53 -37.5 -90.5t-90.5 -37.5t-90.5 37.5t-37.5 90.5t37.5 90.5t90.5 37.5t90.5 -37.5t37.5 -90.5zM1408 640q0 130 -51 248.5t-136.5 204t-204 136.5t-248.5 51t-248.5 -51t-204 -136.5t-136.5 -204t-51 -248.5
+t51 -248.5t136.5 -204t204 -136.5t248.5 -51t248.5 51t204 136.5t136.5 204t51 248.5zM1536 640q0 -209 -103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103t385.5 -103t279.5 -279.5t103 -385.5z"/>
+  </symbol>
+  <symbol id="icon-code" viewBox="0 0 1920 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M617 137l-50 -50q-10 -10 -23 -10t-23 10l-466 466q-10 10 -10 23t10 23l466 466q10 10 23 10t23 -10l50 -50q10 -10 10 -23t-10 -23l-393 -393l393 -393q10 -10 10 -23t-10 -23zM1208 1204l-373 -1291q-4 -13 -15.5 -19.5t-23.5 -2.5l-62 17q-13 4 -19.5 15.5t-2.5 24.5
+l373 1291q4 13 15.5 19.5t23.5 2.5l62 -17q13 -4 19.5 -15.5t2.5 -24.5zM1865 553l-466 -466q-10 -10 -23 -10t-23 10l-50 50q-10 10 -10 23t10 23l393 393l-393 393q-10 10 -10 23t10 23l50 50q10 10 23 10t23 -10l466 -466q10 -10 10 -23t-10 -23z"/>
+  </symbol>
+  <symbol id="icon-rocket" viewBox="0 0 1664 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1440 1088q0 40 -28 68t-68 28t-68 -28t-28 -68t28 -68t68 -28t68 28t28 68zM1664 1376q0 -249 -75.5 -430.5t-253.5 -360.5q-81 -80 -195 -176l-20 -379q-2 -16 -16 -26l-384 -224q-7 -4 -16 -4q-12 0 -23 9l-64 64q-13 14 -8 32l85 276l-281 281l-276 -85q-3 -1 -9 -1
+q-14 0 -23 9l-64 64q-17 19 -5 39l224 384q10 14 26 16l379 20q96 114 176 195q188 187 358 258t431 71q14 0 24 -9.5t10 -22.5z"/>
+  </symbol>
+  <symbol id="icon-apple" viewBox="0 0 1408 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1393 321q-39 -125 -123 -250q-129 -196 -257 -196q-49 0 -140 32q-86 32 -151 32q-61 0 -142 -33q-81 -34 -132 -34q-152 0 -301 259q-147 261 -147 503q0 228 113 374q113 144 284 144q72 0 177 -30q104 -30 138 -30q45 0 143 34q102 34 173 34q119 0 213 -65
+q52 -36 104 -100q-79 -67 -114 -118q-65 -94 -65 -207q0 -124 69 -223t158 -126zM1017 1494q0 -61 -29 -136q-30 -75 -93 -138q-54 -54 -108 -72q-37 -11 -104 -17q3 149 78 257q74 107 250 148q1 -3 2.5 -11t2.5 -11q0 -4 0.5 -10t0.5 -10z"/>
+  </symbol>
+  <symbol id="icon-university" viewBox="0 0 2048 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M960 1536l960 -384v-128h-128q0 -26 -20.5 -45t-48.5 -19h-1526q-28 0 -48.5 19t-20.5 45h-128v128zM256 896h256v-768h128v768h256v-768h128v768h256v-768h128v768h256v-768h59q28 0 48.5 -19t20.5 -45v-64h-1664v64q0 26 20.5 45t48.5 19h59v768zM1851 -64
+q28 0 48.5 -19t20.5 -45v-128h-1920v128q0 26 20.5 45t48.5 19h1782z"/>
+  </symbol>
+  <symbol id="icon-graduation" viewBox="0 0 2304 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1774 700l18 -316q4 -69 -82 -128t-235 -93.5t-323 -34.5t-323 34.5t-235 93.5t-82 128l18 316l574 -181q22 -7 48 -7t48 7zM2304 1024q0 -23 -22 -31l-1120 -352q-4 -1 -10 -1t-10 1l-652 206q-43 -34 -71 -111.5t-34 -178.5q63 -36 63 -109q0 -69 -58 -107l58 -433
+q2 -14 -8 -25q-9 -11 -24 -11h-192q-15 0 -24 11q-10 11 -8 25l58 433q-58 38 -58 107q0 73 65 111q11 207 98 330l-333 104q-22 8 -22 31t22 31l1120 352q4 1 10 1t10 -1l1120 -352q22 -8 22 -31z"/>
+  </symbol>
+  <symbol id="icon-language" viewBox="0 0 1536 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M654 458q-1 -3 -12.5 0.5t-31.5 11.5l-20 9q-44 20 -87 49q-7 5 -41 31.5t-38 28.5q-67 -103 -134 -181q-81 -95 -105 -110q-4 -2 -19.5 -4t-18.5 0q6 4 82 92q21 24 85.5 115t78.5 118q17 30 51 98.5t36 77.5q-8 1 -110 -33q-8 -2 -27.5 -7.5t-34.5 -9.5t-17 -5
+q-2 -2 -2 -10.5t-1 -9.5q-5 -10 -31 -15q-23 -7 -47 0q-18 4 -28 21q-4 6 -5 23q6 2 24.5 5t29.5 6q58 16 105 32q100 35 102 35q10 2 43 19.5t44 21.5q9 3 21.5 8t14.5 5.5t6 -0.5q2 -12 -1 -33q0 -2 -12.5 -27t-26.5 -53.5t-17 -33.5q-25 -50 -77 -131l64 -28
+q12 -6 74.5 -32t67.5 -28q4 -1 10.5 -25.5t4.5 -30.5zM449 944q3 -15 -4 -28q-12 -23 -50 -38q-30 -12 -60 -12q-26 3 -49 26q-14 15 -18 41l1 3q3 -3 19.5 -5t26.5 0t58 16q36 12 55 14q17 0 21 -17zM1147 815l63 -227l-139 42zM39 15l694 232v1032l-694 -233v-1031z
+M1280 332l102 -31l-181 657l-100 31l-216 -536l102 -31l45 110l211 -65zM777 1294l573 -184v380zM1088 -29l158 -13l-54 -160l-40 66q-130 -83 -276 -108q-58 -12 -91 -12h-84q-79 0 -199.5 39t-183.5 85q-8 7 -8 16q0 8 5 13.5t13 5.5q4 0 18 -7.5t30.5 -16.5t20.5 -11
+q73 -37 159.5 -61.5t157.5 -24.5q95 0 167 14.5t157 50.5q15 7 30.5 15.5t34 19t28.5 16.5zM1536 1050v-1079l-774 246q-14 -6 -375 -127.5t-368 -121.5q-13 0 -18 13q0 1 -1 3v1078q3 9 4 10q5 6 20 11q107 36 149 50v384l558 -198q2 0 160.5 55t316 108.5t161.5 53.5
+q20 0 20 -21v-418z"/>
+  </symbol>
+  <symbol id="icon-lifering" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M896 1536q182 0 348 -71t286 -191t191 -286t71 -348t-71 -348t-191 -286t-286 -191t-348 -71t-348 71t-286 191t-191 286t-71 348t71 348t191 286t286 191t348 71zM896 1408q-190 0 -361 -90l194 -194q82 28 167 28t167 -28l194 194q-171 90 -361 90zM218 279l194 194
+q-28 82 -28 167t28 167l-194 194q-90 -171 -90 -361t90 -361zM896 -128q190 0 361 90l-194 194q-82 -28 -167 -28t-167 28l-194 -194q171 -90 361 -90zM896 256q159 0 271.5 112.5t112.5 271.5t-112.5 271.5t-271.5 112.5t-271.5 -112.5t-112.5 -271.5t112.5 -271.5
+t271.5 -112.5zM1380 473l194 -194q90 171 90 361t-90 361l-194 -194q28 -82 28 -167t-28 -167z"/>
+  </symbol>
+  <symbol id="icon-brush" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1615 1536q70 0 122.5 -46.5t52.5 -116.5q0 -63 -45 -151q-332 -629 -465 -752q-97 -91 -218 -91q-126 0 -216.5 92.5t-90.5 219.5q0 128 92 212l638 579q59 54 130 54zM706 502q39 -76 106.5 -130t150.5 -76l1 -71q4 -213 -129.5 -347t-348.5 -134q-123 0 -218 46.5
+t-152.5 127.5t-86.5 183t-29 220q7 -5 41 -30t62 -44.5t59 -36.5t46 -17q41 0 55 37q25 66 57.5 112.5t69.5 76t88 47.5t103 25.5t125 10.5z"/>
+  </symbol>
+  <symbol id="icon-industry" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M448 1536q26 0 45 -19t19 -45v-891l536 429q17 14 40 14q26 0 45 -19t19 -45v-379l536 429q17 14 40 14q26 0 45 -19t19 -45v-1152q0 -26 -19 -45t-45 -19h-1664q-26 0 -45 19t-19 45v1664q0 26 19 45t45 19h384z"/>
+  </symbol>
+  <symbol id="icon-id-card" viewBox="0 0 2048 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M896 324q0 54 -7.5 100.5t-24.5 90t-51 68.5t-81 25q-64 -64 -156 -64t-156 64q-47 0 -81 -25t-51 -68.5t-24.5 -90t-7.5 -100.5q0 -55 31.5 -93.5t75.5 -38.5h426q44 0 75.5 38.5t31.5 93.5zM768 768q0 80 -56 136t-136 56t-136 -56t-56 -136t56 -136t136 -56t136 56
+t56 136zM1792 288v64q0 14 -9 23t-23 9h-704q-14 0 -23 -9t-9 -23v-64q0 -14 9 -23t23 -9h704q14 0 23 9t9 23zM1408 544v64q0 14 -9 23t-23 9h-320q-14 0 -23 -9t-9 -23v-64q0 -14 9 -23t23 -9h320q14 0 23 9t9 23zM1792 544v64q0 14 -9 23t-23 9h-192q-14 0 -23 -9t-9 -23
+v-64q0 -14 9 -23t23 -9h192q14 0 23 9t9 23zM1792 800v64q0 14 -9 23t-23 9h-704q-14 0 -23 -9t-9 -23v-64q0 -14 9 -23t23 -9h704q14 0 23 9t9 23zM128 1152h1792v96q0 14 -9 23t-23 9h-1728q-14 0 -23 -9t-9 -23v-96zM2048 1248v-1216q0 -66 -47 -113t-113 -47h-1728
+q-66 0 -113 47t-47 113v1216q0 66 47 113t113 47h1728q66 0 113 -47t47 -113z"/>
+  </symbol>
+  <symbol id="icon-microchip" viewBox="0 0 1536 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M192 256v-128h-112q-16 0 -16 16v16h-48q-16 0 -16 16v32q0 16 16 16h48v16q0 16 16 16h112zM192 512v-128h-112q-16 0 -16 16v16h-48q-16 0 -16 16v32q0 16 16 16h48v16q0 16 16 16h112zM192 768v-128h-112q-16 0 -16 16v16h-48q-16 0 -16 16v32q0 16 16 16h48v16
+q0 16 16 16h112zM192 1024v-128h-112q-16 0 -16 16v16h-48q-16 0 -16 16v32q0 16 16 16h48v16q0 16 16 16h112zM192 1280v-128h-112q-16 0 -16 16v16h-48q-16 0 -16 16v32q0 16 16 16h48v16q0 16 16 16h112zM1280 1440v-1472q0 -40 -28 -68t-68 -28h-832q-40 0 -68 28
+t-28 68v1472q0 40 28 68t68 28h832q40 0 68 -28t28 -68zM1536 208v-32q0 -16 -16 -16h-48v-16q0 -16 -16 -16h-112v128h112q16 0 16 -16v-16h48q16 0 16 -16zM1536 464v-32q0 -16 -16 -16h-48v-16q0 -16 -16 -16h-112v128h112q16 0 16 -16v-16h48q16 0 16 -16zM1536 720v-32
+q0 -16 -16 -16h-48v-16q0 -16 -16 -16h-112v128h112q16 0 16 -16v-16h48q16 0 16 -16zM1536 976v-32q0 -16 -16 -16h-48v-16q0 -16 -16 -16h-112v128h112q16 0 16 -16v-16h48q16 0 16 -16zM1536 1232v-32q0 -16 -16 -16h-48v-16q0 -16 -16 -16h-112v128h112q16 0 16 -16v-16
+h48q16 0 16 -16z"/>
+  </symbol>
+</svg>
+
 <!-- LOGO -->
-    <div><a href="index.html"><img class="logo" src="img/ft_logo.jpg" alt="Logo"></a></div>
+<header>
+  <a href="index.html"><img class="logo" src="img/ft_logo.jpg" alt="Franco Tamoni" decoding="async"></a>
+</header>
 
 <!-- Navbar -->
-<div class="navbar">
-  <a class="active" href="#"><i class="fa fa-id-card fa-lg" aria-hidden="true"></i> Passato</a>
-  <a href="presente.html"><i class="fa fa-flask fa-lg" aria-hidden="true"></i> Presente</a>
-  <a href="mailto:franco@tamoni.cloud"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> Futuro</a>
-</div>
+<nav class="navbar" aria-label="Principale">
+  <a class="active" href="#"><svg class="icon" aria-hidden="true"><use href="#icon-id-card"></use></svg> Passato</a>
+  <a href="presente.html"><svg class="icon" aria-hidden="true"><use href="#icon-flask"></use></svg> Presente</a>
+  <a href="mailto:franco@tamoni.cloud"><svg class="icon" aria-hidden="true"><use href="#icon-envelope"></use></svg> Futuro</a>
+</nav>
 
 <!-- Wrapper -->
+<main id="main">
   <div class="wrapper">
     <ul class="timeline">
       <li data-color="gray" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></div>Legenda</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg></span>Legenda</summary>
           <p>I colori hanno il seguente significato:</p>
-<!-- Legenda -->
           <div class="legenda">
             <table>
               <tr>
@@ -57,208 +180,212 @@
                 <td>Esperienza lavorativa</td>
               </tr>
             </table>
-        </div>
-<!-- End Legenda -->
+          </div>
         </details>
       </li>
 
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-university fa-lg" aria-hidden="true"></i></div>Insegnante - MIM</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-university"></use></svg></span>Insegnante - MIM</summary>
           <p><b>Da settembre 2017 a oggi:</b><br> Maestro.</p>
-        <img src="img/Logo_MIM.png" alt="MIM" width="100%" style="float:left;">
+          <img src="img/Logo_MIM.png" alt="Logo Ministero dell'Istruzione e del Merito" style="float:left; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Storytelling con i Libri Game <div class="icon-dx"><i class="fa fa-book fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Storytelling con i Libri Game <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-book"></use></svg></span></summary>
           <p><b>Maggio 2023:</b><br> Completamento di un corso formativo della durata di 10 ore organizzato dal <b><a href="https://serviziomarconi.istruzioneer.gov.it">Servizio Marconi TSI</a></b> Equipe Formativa Territoriale dell'Ufficio Scolastico Regionale per l'Emilia-Romagna sullo storytelling con i libri game.</p>
-        <img src="img/2023_TamoniFranco_Attestato_StorytellingConLibriGame.jpg" alt="LibriGame" width="100%" style="float:right;">
+          <img src="img/2023_TamoniFranco_Attestato_StorytellingConLibriGame.jpg" alt="Attestato Storytelling con i Libri Game" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Coding con Python <div class="icon-dx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Coding con Python <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span></summary>
           <p><b>Gennaio 2023:</b><br> Completamento di un corso della durata di 36 ore organizzato dal <b><a href="https://www.iiseuganeo.cloud/steam/vex/">Polo STEAM - Este</a></b> (PD) sul coding con linguaggio di programmazione testuale: Python.</p>
-        <img src="img/2023-01_TamoniFranco_CODING_CON_LINGUAGGIO_DI_PROGRAMMAZIONE_TESTUALE.jpg" alt="Python" width="100%" style="float:right;">
+          <img src="img/2023-01_TamoniFranco_CODING_CON_LINGUAGGIO_DI_PROGRAMMAZIONE_TESTUALE.jpg" alt="Attestato Coding con Python" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Elementi di scrittura con LaTeX <div class="icon-dx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Elementi di scrittura con LaTeX <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span></summary>
           <p><b>Ottobre 2022:</b><br> Completamento del corso di formazione "Elementi di scrittura scientifica con LaTeX" della durata complessiva di 15 ore, organizzato da <b><a href="https://bembus.org/attivita/">Bembus</a></b>, promosso da Humanities for Change e Il Liutaio nel Bazaar e finanziata con i fondi per le attività studentesche dell'<b><a href="https://unive.it">Università Ca' Foscari di Venezia</a></b>.</p>
-        <img src="img/LaTeX.jpg" alt="LaTeX" width="100%" style="float:right;">
+          <img src="img/LaTeX.jpg" alt="Logo LaTeX" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Europe Code Week 2022 <div class="icon-dx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Europe Code Week 2022 <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span></summary>
           <p><b>Ottobre 2022:</b><br> Partecipazione alla <b><a href="https://codeweek.eu">Europe Code Week</a></b> 2022.</p>
-        <img src="img/EU-CodeWeek.jpg" alt="EU-CodeWeek" width="100%" style="float:right;">
+          <img src="img/EU-CodeWeek.jpg" alt="Logo Europe Code Week" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Book Creator Certified Author <div class="icon-dx"><i class="fa fa-book fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Book Creator Certified Author <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-book"></use></svg></span></summary>
           <p><b>Luglio 2022:</b><br> Completamento di un corso di authoring di libri digitali con <b><a href="https://intercom.help/bookcreator/en/articles/4156537-become-a-book-creator-certified-author">Book Creator</a></b> e conferimento del badge "Book Creator Certified Author".</p>
-        <img src="img/2022-07_TamoniFranco_bookcreator-certificate.jpg" alt="BookCreator" width="100%" style="float:right;">
+          <img src="img/2022-07_TamoniFranco_bookcreator-certificate.jpg" alt="Certificato Book Creator Certified Author" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Tinkering <div class="icon-dx"><i class="fa fa-microchip fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Tinkering <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-microchip"></use></svg></span></summary>
           <p><b>Giugno 2022:</b><br> Partecipazione al webinar "Tinkering - ne parliamo con Luigi Anzivino", in collaborazione con il <b><a href="https://serviziomarconi.istruzioneer.gov.it">Servizio Marconi TSI</a></b> Equipe Formativa Territoriale dell'Ufficio Scolastico Regionale per l'Emilia-Romagna nel quadro dell'attività di scuola polo del'IIS Scarabelli-Ghini in tema di innovazione didattica a livello regionale per gli animatori digitali e tutti i docenti interessati.</p>
-        <img src="img/TINKERING.jpg" alt="TINKERING" width="100%" style="float:right;">
+          <img src="img/TINKERING.jpg" alt="Locandina corso Tinkering" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Formazione per docenti in anno di prova <div class="icon-dx"><i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i></div></summary>
-          <p><b>Maggio 2022:</b><br> Partecipazione alla formazione organizzata per i docenti in Anno di Formazione e Prova dall’<b><a href="https://fe.istruzioneer.gov.it/pagine-tematiche/formazione-docenti-neo-assunti-e-anno-di-prova/">UAT di Ferrara</a></b> e dalle scuole polo degli Ambiti 5 e 6.</p>
-        <img src="img/formazione2022.jpg" alt="formazione2022" width="100%" style="float:right;">
+          <summary>Formazione per docenti in anno di prova <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg></span></summary>
+          <p><b>Maggio 2022:</b><br> Partecipazione alla formazione organizzata per i docenti in Anno di Formazione e Prova dall'<b><a href="https://fe.istruzioneer.gov.it/pagine-tematiche/formazione-docenti-neo-assunti-e-anno-di-prova/">UAT di Ferrara</a></b> e dalle scuole polo degli Ambiti 5 e 6.</p>
+          <img src="img/formazione2022.jpg" alt="Attestato formazione docenti anno di prova 2022" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Apprendimento cooperativo<div class="icon-dx"><i class="fa fa-users fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Apprendimento cooperativo<span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg></span></summary>
           <p><b>Aprile 2022:</b><br> Partecipazione al corso di formazione "Apprendimento cooperativo: perché e come realizzarlo" organizzato dal <b><a href="https://serviziomarconi.istruzioneer.gov.it">Servizio Marconi TSI</a></b> Equipe Formativa Territoriale dell'Ufficio Scolastico Regionale per l'Emilia-Romagna.</p>
-        <img src="img/apprendimentoCooperativo.jpg" alt="apprendimentoCooperativo" width="100%" style="float:right;">
+          <img src="img/apprendimentoCooperativo.jpg" alt="Attestato Apprendimento Cooperativo" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Tools per la Primaria <div class="icon-dx"><i class="fa fa-rocket fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Tools per la Primaria <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-rocket"></use></svg></span></summary>
           <p><b>Marzo 2022:</b><br> Partecipazione al corso "Tools semplicissimi per la Primaria", in collaborazione con il <b><a href="https://serviziomarconi.istruzioneer.gov.it">Servizio Marconi TSI</a></b> Equipe Formativa Territoriale dell'Ufficio Scolastico Regionale per l'Emilia-Romagna.</p>
-        <img src="img/TOOLS-SEMPLICISSIMI.jpg" alt="TOOLS-SEMPLICISSIMI" width="100%" style="float:right;">
+          <img src="img/TOOLS-SEMPLICISSIMI.jpg" alt="Attestato Tools semplicissimi per la Primaria" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Dal disegno alla stampa 3D <div class="icon-dx"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Dal disegno alla stampa 3D <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg></span></summary>
           <p><b>Marzo 2022:</b><br> Partecipazione al corso "Dal disegno alla stampa 3D", in collaborazione con il <b><a href="https://serviziomarconi.istruzioneer.gov.it">Servizio Marconi TSI</a></b> Equipe Formativa Territoriale dell'Ufficio Scolastico Regionale per l'Emilia-Romagna.</p>
-        <img src="img/stampa3D.jpg" alt="stampa3D" width="100%" style="float:right;">
+          <img src="img/stampa3D.jpg" alt="Attestato Dal disegno alla stampa 3D" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="scol" class="dx">
         <details class="panel">
-          <summary>TFA Sostegno - UNIFE <div class="icon-dx"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>TFA Sostegno - UNIFE <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"></use></svg></span></summary>
           <p><b>15 luglio 2021:</b><br> Completamento del persorso <b><a href="https://www.unife.it/it/corsi/formazione-insegnanti/tfa-sostegno/vii-ciclo/tfa-sostegno">TFA Sostegno presso UNIFE</a></b> con conseguimento del Diploma di Specializzazione per le Attività di Sostegno Didattico agli Alunni con Disabilità.</p>
-        <img src="img/Logo-unife.png" alt="unife" width="80%" style="float:right;">
+          <img src="img/Logo-unife.png" alt="Logo Università di Ferrara" style="float:right; width:80%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>DDI... per una scuola inclusiva <div class="icon-dx"><i class="fa fa-tablet fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>DDI... per una scuola inclusiva <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-tablet"></use></svg></span></summary>
           <p><b>Dicembre 2020:</b><br> Partecipazione al corso "DDI... sfida pedagogica per una scuola inclusiva", promosso dal <b><a href="http://fe.cts.istruzioneer.it">C.T.S. di Ferrara</a></b> in collaborazione con l'Ufficio Integrazione del Comune di Ferrara e Cooperativa ATI Sostegno.</p>
-        <img src="img/DDI.jpg" alt="DDI" width="100%" style="float:right;">
+          <img src="img/DDI.jpg" alt="Attestato DDI scuola inclusiva" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Noi per loro <div class="icon-dx"><i class="fa fa-life-ring fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Noi per loro <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-lifering"></use></svg></span></summary>
           <p><b>Aprile 2018:</b><br> Partecipazione al corso di 21 ore "Noi per loro, formazione sui Disturbi Specifici dell'Apprendimento", per insegnanti della Scuola Primaria, organizzato da <b><a href="https://sosdislessia-ferrara.it">SOS Dislessia Onlus</a></b>, ente accreditato dall'Ufficio Scolastico Regionale per l'Emilia-Romagna, con il patrocinio della Provincia di Ferrara.</p>
-        <img src="img/SOS-DislessiaOnlus.jpg" alt="SOS-DislessiaOnlus" width="100%" style="float:right;">
+          <img src="img/SOS-DislessiaOnlus.jpg" alt="Logo SOS Dislessia Onlus" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Attestazione di lingua inglese <div class="icon-dx"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Attestazione di lingua inglese <span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-language"></use></svg></span></summary>
           <p><b>Giugno 2017:</b><br> Attestazione di livello di Lingua Inglese come ADVANCED, equivalente al livello B2+ del Common European Framework of Reference, presso <b><a href="https://www.wallstreet.it/scuola-inglese/ferrara">Wall Street English di Ferrara</a></b>.</p>
-        <img src="img/ENG.jpg" alt="ENG" width="100%" style="float:right;">
+          <img src="img/ENG.jpg" alt="Attestato lingua inglese B2+ Wall Street English" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></div>ir - Digital Assets Management</summary>
-          <p><b>Febbraio 2015 - Settembre 2017:</b><br> DAM - Digital Assets Management: ingestion, annotation, cataloguing, storage, retrieval and distribution of digital assets. Utilizzo di Scalar i500 LTO storage system, Linux (Debian) Server. Attività di IT and tech support presso il laboratorio <b><a href="https://www.immagineritrovata.it">L’Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a>.</p> <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></b></p>
-        <img src="img/IR-worldRGB-300x212.jpg" alt="ir" width="50%" style="float:left;">
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg></span>ir - Digital Assets Management</summary>
+          <p><b>Febbraio 2015 - Settembre 2017:</b><br> DAM - Digital Assets Management: ingestion, annotation, cataloguing, storage, retrieval and distribution of digital assets. Utilizzo di Scalar i500 LTO storage system, Linux (Debian) Server. Attività di IT and tech support presso il laboratorio <b><a href="https://www.immagineritrovata.it">L'Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a></b>.</p>
+          <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></p>
+          <img src="img/IR-worldRGB-300x212.jpg" alt="L'Immagine Ritrovata - Film Restoration" style="float:left; width:50%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></div>ir - DCI Mastering & QC</summary>
-          <p><b>Gennaio 2013 - Gennaio 2015:</b><br> DCI Mastering e Controllo Qualità su vari supporti: DCP, HDCAM, Digital Betacam, File based video encoding. Utilizzo di Rohde & Schwarz DVS Clipster workstations, Sony DVW-M2000P, Sony SRW5500 presso il laboratorio <b><a href="https://www.immagineritrovata.it">L’Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a>.</p> <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></b></p>
-        <img src="img/IR-worldRGB-300x212.jpg" alt="ir" width="50%" style="float:left;">
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg></span>ir - DCI Mastering &amp; QC</summary>
+          <p><b>Gennaio 2013 - Gennaio 2015:</b><br> DCI Mastering e Controllo Qualità su vari supporti: DCP, HDCAM, Digital Betacam, File based video encoding. Utilizzo di Rohde &amp; Schwarz DVS Clipster workstations, Sony DVW-M2000P, Sony SRW5500 presso il laboratorio <b><a href="https://www.immagineritrovata.it">L'Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a></b>.</p>
+          <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></p>
+          <img src="img/IR-worldRGB-300x212.jpg" alt="L'Immagine Ritrovata - Film Restoration" style="float:left; width:50%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></div>ir - Digital Restorer</summary>
-          <p><b>Marzo 2012 - Dicembre 2013:</b><br> frame based e clip based digital restoration su software Blackmagic DaVinci Revival e Image Systems Phoenix presso il laboratorio <b><a href="https://www.immagineritrovata.it">L’Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a>.</p> <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></b></p>
-        <img src="img/IR-worldRGB-300x212.jpg" alt="ir" width="50%" style="float:left;">
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg></span>ir - Digital Restorer</summary>
+          <p><b>Marzo 2012 - Dicembre 2013:</b><br> frame based e clip based digital restoration su software Blackmagic DaVinci Revival e Image Systems Phoenix presso il laboratorio <b><a href="https://www.immagineritrovata.it">L'Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a></b>.</p>
+          <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></p>
+          <img src="img/IR-worldRGB-300x212.jpg" alt="L'Immagine Ritrovata - Film Restoration" style="float:left; width:50%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>ir - Digital Film Restoration<div class="icon-dx"><i class="fa fa-paint-brush fa-lg" aria-hidden="true"></i></div></summary>
-          <p><b>2012:</b><br> Formazione professionale in Digital Film Restoration su Blackmagic DaVinci Revival e Image Systems Phoenix presso il laboratorio <b><a href="https://www.immagineritrovata.it">L’Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a>.</p> <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></b></p>
-        <img src="img/IR-worldRGB-300x212.jpg" alt="ir" width="50%" style="float:right;">
+          <summary>ir - Digital Film Restoration<span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-brush"></use></svg></span></summary>
+          <p><b>2012:</b><br> Formazione professionale in Digital Film Restoration su Blackmagic DaVinci Revival e Image Systems Phoenix presso il laboratorio <b><a href="https://www.immagineritrovata.it">L'Immagine Ritrovata - Film Restoration and Conservation - Cineteca di Bologna</a></b>.</p>
+          <p><a href="https://youtu.be/Vu3Z-Kg8F4Q">Cosa si fa in un laboratorio di restauro cinematografico?</a></p>
+          <img src="img/IR-worldRGB-300x212.jpg" alt="L'Immagine Ritrovata - Film Restoration" style="float:right; width:50%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></div>Post-production Specialist & ICT</summary>
-          <p><b>Marzo 2006 - Maggio 2009:</b><br> Post-production Specialist & ICT presso USA Home Entertainment - Polesella - Rovigo. Attività di video editing, video post, tutoring, DVD authoring, motion graphics.</p>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></span>Post-production Specialist &amp; ICT</summary>
+          <p><b>Marzo 2006 - Maggio 2009:</b><br> Post-production Specialist &amp; ICT presso USA Home Entertainment - Polesella - Rovigo. Attività di video editing, video post, tutoring, DVD authoring, motion graphics.</p>
         </details>
       </li>
       <li data-color="scol" class="dx">
         <details class="panel">
-          <summary>MISP - UNIBO/IUPUI<div class="icon-dx"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i></div></summary>
-          <p><b>2005 - 2006:</b> Master in International Studies in Philanthropy and Social Enterpreneurship (MISP/IUPUI) presso l'<b><a href="https://www.unibo.it/it/homepage">Università di Bologna</a></b> e la <b><a href="https://www.iupui.edu">IUPUI University</a></b> - Indianapolis, Indiana  (tot. 1800 ore). Resp. Bologna: Prof. Giuliana Gemelli; Resp. IUPUI: Prof. Dwight Burlingame. Temi: Corporate Social Responsibility, ONG, project development, third-sector. Programma di scambio di 4 mesi presso la IUPUI University, Indianapolis, Indiana (USA).</p>
-        <img src="img/logo-unibo.png" alt="UNIBO" width="100%" style="float:right;">
+          <summary>MISP - UNIBO/IUPUI<span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"></use></svg></span></summary>
+          <p><b>2005 - 2006:</b> Master in International Studies in Philanthropy and Social Enterpreneurship (MISP/IUPUI) presso l'<b><a href="https://www.unibo.it/it/homepage">Università di Bologna</a></b> e la <b><a href="https://www.iupui.edu">IUPUI University</a></b> - Indianapolis, Indiana (tot. 1800 ore). Resp. Bologna: Prof. Giuliana Gemelli; Resp. IUPUI: Prof. Dwight Burlingame. Temi: Corporate Social Responsibility, ONG, project development, third-sector. Programma di scambio di 4 mesi presso la IUPUI University, Indianapolis, Indiana (USA).</p>
+          <img src="img/logo-unibo.png" alt="Logo Università di Bologna" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-apple fa-lg" aria-hidden="true"></i></div>Customer Service Advisor - Apple</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-apple"></use></svg></span>Customer Service Advisor - Apple</summary>
           <p><b>Febbraio 2003:</b><br> un anno come Customer Service Advisor presso <b><a href="https://www.apple.com/careers/it/work-at-apple/cork.html">Apple Computer Inc. sede di Cork</a></b> - Ireland.</p>
-        <img src="img/applerainbowlogo.png" alt="Apple" width="100%" style="float:left;">
+          <img src="img/applerainbowlogo.png" alt="Logo Apple" style="float:left; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="scol" class="dx">
         <details class="panel">
-          <summary>Laurea<div class="icon-dx"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Laurea<span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"></use></svg></span></summary>
           <p><b>10 dicembre 2002:</b><br> Laurea in Filosofia, indirizzo Scienze Umane e Sociali, con votazione 110 e lode. Tesi in Etnologia. <b><a href="https://www.unisi.it">Università di Siena</a></b>.</p>
-        <img src="img/LOGO_UNISI.jpg" alt="UNISI" width="100%" style="float:right;">
+          <img src="img/LOGO_UNISI.jpg" alt="Logo Università di Siena" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-university fa-lg" aria-hidden="true"></i></div>Insegnante ICT</summary>
-          <p><b>Ottobre 2000 - Maggio 2002:</b><br> Insegnante presso le Scuole Web & Multimedia, <b><a href="https://www.cittadelragazzo.org">CFP Don Calabria</a></b> - Ferrara. Introduzione a macOS; introduzione ad Adobe Photoshop e a vari programmi di authoring multimediale.</p>
-        <img src="img/cdr.jpg" alt="CFP Don Calabria" width="100%" style="float:left;">
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-university"></use></svg></span>Insegnante ICT</summary>
+          <p><b>Ottobre 2000 - Maggio 2002:</b><br> Insegnante presso le Scuole Web &amp; Multimedia, <b><a href="https://www.cittadelragazzo.org">CFP Don Calabria</a></b> - Ferrara. Introduzione a macOS; introduzione ad Adobe Photoshop e a vari programmi di authoring multimediale.</p>
+          <img src="img/cdr.jpg" alt="Logo CFP Don Calabria" style="float:left; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="form" class="dx">
         <details class="panel">
-          <summary>Tecnico dell'Editoria Multimediale<div class="icon-dx"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i></div></summary>
-          <p><b>1999 - 2000:</b><br> Diploma di Tecnico dell'Editoria Multimediale, conseguito presso le Scuole Web & Multimedia, <b><a href="https://www.cittadelragazzo.org">CFP Don Calabria</a></b> - Ferrara. Corso FSE - livello IV della durata di 700 ore + 200 ore di stage in azienda (Melazeta Communication House di Modena).</p>
-        <img src="img/cdr.jpg" alt="CFP Don Calabria" width="100%" style="float:right;">
+          <summary>Tecnico dell'Editoria Multimediale<span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-display"></use></svg></span></summary>
+          <p><b>1999 - 2000:</b><br> Diploma di Tecnico dell'Editoria Multimediale, conseguito presso le Scuole Web &amp; Multimedia, <b><a href="https://www.cittadelragazzo.org">CFP Don Calabria</a></b> - Ferrara. Corso FSE - livello IV della durata di 700 ore + 200 ore di stage in azienda (Melazeta Communication House di Modena).</p>
+          <img src="img/cdr.jpg" alt="Logo CFP Don Calabria" style="float:right; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-life-ring fa-lg" aria-hidden="true"></i></div>Servizio civile - ANFFAS</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-lifering"></use></svg></span>Servizio civile - ANFFAS</summary>
           <p><b>Febbraio 1995:</b><br> Servizio civile di un anno presso <b><a href="http://www.anffas.net">ANFFAS</a></b> di Bologna come operatore SAP (servizio aiuto alla persona).</p>
-        <img src="img/Logo_Anffas.png" alt="ANFFAS" width="90%" style="float:left;">
+          <img src="img/Logo_Anffas.png" alt="Logo ANFFAS" style="float:left; width:90%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-industry fa-lg" aria-hidden="true"></i></div>Operatore Stacker - Eridania</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-industry"></use></svg></span>Operatore Stacker - Eridania</summary>
           <p>Dodici campagne saccarifere estive in qualità di Operatore Stacker presso lo stabilimento <b><a href="https://eridania.it">Eridania Zuccheri</a></b> (poi SFIR) di San Pietro in Casale (BO).</p>
-          <img src="img/Logo_Eridania.png" alt="Eridania Zuccheri" width="100%" style="float:left;">
+          <img src="img/Logo_Eridania.png" alt="Logo Eridania Zuccheri" style="float:left; width:100%;" loading="lazy" decoding="async">
         </details>
       </li>
       <li data-color="scol" class="dx">
         <details class="panel">
-          <summary>Maturità<div class="icon-dx"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i></div></summary>
+          <summary>Maturità<span class="icon-dx"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"></use></svg></span></summary>
           <p><b>23 luglio 1993 - <a href="https://www.liceoariosto.edu.it">Liceo Ariosto di Ferrara</a></b></p>
-        <img src="img/LogoLiceoAriosto.jpg" alt="Liceo Ariosto" width="50%" style="float:right;">
+          <img src="img/LogoLiceoAriosto.jpg" alt="Logo Liceo Ariosto di Ferrara" style="float:right; width:50%;" loading="lazy" decoding="async">
         </details>
-      </li>           
+      </li>
     </ul>
   </div>
-<!-- End Wrapper -->
+</main>
+
 </body>
 </html>

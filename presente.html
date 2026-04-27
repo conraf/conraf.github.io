@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>FT - Presente</title>
+  <title>Franco Tamoni — Presente</title>
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <!-- Load an icon library -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="view-transition" content="same-origin">
+  <meta name="description" content="Progetti, video didattici e lavori creativi di Franco Tamoni: insegnante, filmmaker, informatico.">
+  <meta property="og:title" content="Franco Tamoni — Presente">
+  <meta property="og:description" content="Progetti, video didattici e lavori creativi di Franco Tamoni.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/ft_logo.jpg">
+  <link rel="stylesheet" href="css/styles.css">
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -20,155 +25,202 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<!-- FontAwesome 4 sprite — SIL OFL license -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-music" viewBox="0 0 1536 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1536 1312v-1120q0 -50 -34 -89t-86 -60.5t-103.5 -32t-96.5 -10.5t-96.5 10.5t-103.5 32t-86 60.5t-34 89t34 89t86 60.5t103.5 32t96.5 10.5q105 0 192 -39v537l-768 -237v-709q0 -50 -34 -89t-86 -60.5t-103.5 -32t-96.5 -10.5t-96.5 10.5t-103.5 32t-86 60.5t-34 89
+t34 89t86 60.5t103.5 32t96.5 10.5q105 0 192 -39v967q0 31 19 56.5t49 35.5l832 256q12 4 28 4q40 0 68 -28t28 -68z"/>
+  </symbol>
+  <symbol id="icon-video" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1792 1184v-1088q0 -42 -39 -59q-13 -5 -25 -5q-27 0 -45 19l-403 403v-166q0 -119 -84.5 -203.5t-203.5 -84.5h-704q-119 0 -203.5 84.5t-84.5 203.5v704q0 119 84.5 203.5t203.5 84.5h704q119 0 203.5 -84.5t84.5 -203.5v-165l403 402q18 19 45 19q12 0 25 -5
+q39 -17 39 -59z"/>
+  </symbol>
+  <symbol id="icon-image" viewBox="0 0 1920 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M640 960q0 -80 -56 -136t-136 -56t-136 56t-56 136t56 136t136 56t136 -56t56 -136zM1664 576v-448h-1408v192l320 320l160 -160l512 512zM1760 1280h-1600q-13 0 -22.5 -9.5t-9.5 -22.5v-1216q0 -13 9.5 -22.5t22.5 -9.5h1600q13 0 22.5 9.5t9.5 22.5v1216
+q0 13 -9.5 22.5t-22.5 9.5zM1920 1248v-1216q0 -66 -47 -113t-113 -47h-1600q-66 0 -113 47t-47 113v1216q0 66 47 113t113 47h1600q66 0 113 -47t47 -113z"/>
+  </symbol>
+  <symbol id="icon-flask" viewBox="0 0 1664 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1527 88q56 -89 21.5 -152.5t-140.5 -63.5h-1152q-106 0 -140.5 63.5t21.5 152.5l503 793v399h-64q-26 0 -45 19t-19 45t19 45t45 19h512q26 0 45 -19t19 -45t-19 -45t-45 -19h-64v-399zM748 813l-272 -429h712l-272 429l-20 31v37v399h-128v-399v-37z"/>
+  </symbol>
+  <symbol id="icon-envelope" viewBox="0 0 1792 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1792 826v-794q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v794q44 -49 101 -87q362 -246 497 -345q57 -42 92.5 -65.5t94.5 -48t110 -24.5h1h1q51 0 110 24.5t94.5 48t92.5 65.5q170 123 498 345q57 39 100 87zM1792 1120q0 -79 -49 -151t-122 -123
+q-376 -261 -468 -325q-10 -7 -42.5 -30.5t-54 -38t-52 -32.5t-57.5 -27t-50 -9h-1h-1q-23 0 -50 9t-57.5 27t-52 32.5t-54 38t-42.5 30.5q-91 64 -262 182.5t-205 142.5q-62 42 -117 115.5t-55 136.5q0 78 41.5 130t118.5 52h1472q65 0 112.5 -47t47.5 -113z"/>
+  </symbol>
+  <symbol id="icon-smile" viewBox="0 0 1536 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1134 461q-37 -121 -138 -195t-228 -74t-228 74t-138 195q-8 25 4 48.5t38 31.5q25 8 48.5 -4t31.5 -38q25 -80 92.5 -129.5t151.5 -49.5t151.5 49.5t92.5 129.5q8 26 32 38t49 4t37 -31.5t4 -48.5zM640 896q0 -53 -37.5 -90.5t-90.5 -37.5t-90.5 37.5t-37.5 90.5
+t37.5 90.5t90.5 37.5t90.5 -37.5t37.5 -90.5zM1152 896q0 -53 -37.5 -90.5t-90.5 -37.5t-90.5 37.5t-37.5 90.5t37.5 90.5t90.5 37.5t90.5 -37.5t37.5 -90.5zM1408 640q0 130 -51 248.5t-136.5 204t-204 136.5t-248.5 51t-248.5 -51t-204 -136.5t-136.5 -204t-51 -248.5
+t51 -248.5t136.5 -204t204 -136.5t248.5 -51t248.5 51t204 136.5t136.5 204t51 248.5zM1536 640q0 -209 -103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103t385.5 -103t279.5 -279.5t103 -385.5z"/>
+  </symbol>
+  <symbol id="icon-code" viewBox="0 0 1920 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M617 137l-50 -50q-10 -10 -23 -10t-23 10l-466 466q-10 10 -10 23t10 23l466 466q10 10 23 10t23 -10l50 -50q10 -10 10 -23t-10 -23l-393 -393l393 -393q10 -10 10 -23t-10 -23zM1208 1204l-373 -1291q-4 -13 -15.5 -19.5t-23.5 -2.5l-62 17q-13 4 -19.5 15.5t-2.5 24.5
+l373 1291q4 13 15.5 19.5t23.5 2.5l62 -17q13 -4 19.5 -15.5t2.5 -24.5zM1865 553l-466 -466q-10 -10 -23 -10t-23 10l-50 50q-10 10 -10 23t10 23l393 393l-393 393q-10 10 -10 23t10 23l50 50q10 10 23 10t23 -10l466 -466q10 -10 10 -23t-10 -23z"/>
+  </symbol>
+  <symbol id="icon-graduation" viewBox="0 0 2304 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M1774 700l18 -316q4 -69 -82 -128t-235 -93.5t-323 -34.5t-323 34.5t-235 93.5t-82 128l18 316l574 -181q22 -7 48 -7t48 7zM2304 1024q0 -23 -22 -31l-1120 -352q-4 -1 -10 -1t-10 1l-652 206q-43 -34 -71 -111.5t-34 -178.5q63 -36 63 -109q0 -69 -58 -107l58 -433
+q2 -14 -8 -25q-9 -11 -24 -11h-192q-15 0 -24 11q-10 11 -8 25l58 433q-58 38 -58 107q0 73 65 111q11 207 98 330l-333 104q-22 8 -22 31t22 31l1120 352q4 1 10 1t10 -1l1120 -352q22 -8 22 -31z"/>
+  </symbol>
+  <symbol id="icon-id-card" viewBox="0 0 2048 1792">
+    <path transform="translate(0,1536) scale(1,-1)" d="M896 324q0 54 -7.5 100.5t-24.5 90t-51 68.5t-81 25q-64 -64 -156 -64t-156 64q-47 0 -81 -25t-51 -68.5t-24.5 -90t-7.5 -100.5q0 -55 31.5 -93.5t75.5 -38.5h426q44 0 75.5 38.5t31.5 93.5zM768 768q0 80 -56 136t-136 56t-136 -56t-56 -136t56 -136t136 -56t136 56
+t56 136zM1792 288v64q0 14 -9 23t-23 9h-704q-14 0 -23 -9t-9 -23v-64q0 -14 9 -23t23 -9h704q14 0 23 9t9 23zM1408 544v64q0 14 -9 23t-23 9h-320q-14 0 -23 -9t-9 -23v-64q0 -14 9 -23t23 -9h320q14 0 23 9t9 23zM1792 544v64q0 14 -9 23t-23 9h-192q-14 0 -23 -9t-9 -23
+v-64q0 -14 9 -23t23 -9h192q14 0 23 9t9 23zM1792 800v64q0 14 -9 23t-23 9h-704q-14 0 -23 -9t-9 -23v-64q0 -14 9 -23t23 -9h704q14 0 23 9t9 23zM128 1152h1792v96q0 14 -9 23t-23 9h-1728q-14 0 -23 -9t-9 -23v-96zM2048 1248v-1216q0 -66 -47 -113t-113 -47h-1728
+q-66 0 -113 47t-47 113v1216q0 66 47 113t113 47h1728q66 0 113 -47t47 -113z"/>
+  </symbol>
+</svg>
+
 <!-- LOGO -->
-    <div><a href="index.html"><img class="logo" src="img/ft_logo.jpg" alt="Logo"></a></div>
+<header>
+  <a href="index.html"><img class="logo" src="img/ft_logo.jpg" alt="Franco Tamoni" decoding="async" loading="lazy"></a>
+</header>
 
 <!-- Navbar -->
-<div class="navbar">
-  <a href="index.html"><i class="fa fa-id-card fa-lg" aria-hidden="true"></i> Passato</a>
-  <a class="active" href="#"><i class="fa fa-flask fa-lg" aria-hidden="true"></i> Presente</a>
-  <a href="mailto:franco@tamoni.cloud"><i class="fa fa-envelope fa-lg"></i> Futuro</a>
-</div>
+<nav class="navbar" aria-label="Principale">
+  <a href="index.html"><svg class="icon" aria-hidden="true"><use href="#icon-id-card"></use></svg> Passato</a>
+  <a class="active" href="#"><svg class="icon" aria-hidden="true"><use href="#icon-flask"></use></svg> Presente</a>
+  <a href="mailto:franco@tamoni.cloud"><svg class="icon" aria-hidden="true"><use href="#icon-envelope"></use></svg> Futuro</a>
+</nav>
 
 <!-- Wrapper -->
+<main id="main">
   <div class="wrapper">
     <ul class="timeline-pres">
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>Sbobinare un audio</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span>Sbobinare un audio</summary>
           <div class="panel">
             <p>Ideazione, redazione testi, grafiche e montaggio. Speaker in sintesi vocale.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xfb2ChVYT1k?si=_YPfiye6-mZPrY2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xfb2ChVYT1k?si=_YPfiye6-mZPrY2N" title="Sbobinare un audio — tutorial didattico" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>Contributi video in classe</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span>Contributi video in classe</summary>
           <div class="panel">
             <p>Ideazione, redazione testi, grafiche e montaggio. Speaker in sintesi vocale.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/afc-YVkZRQM?si=yf0eC7ClJAgo_Fam" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/afc-YVkZRQM?si=yf0eC7ClJAgo_Fam" title="Contributi video in classe — tutorial didattico" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></div>Divisioni con i Multipli e carico cognitivo</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></span>Divisioni con i Multipli e carico cognitivo</summary>
           <div class="panel">
             <p>Ideazione, redazione testi, grafiche e montaggio. Speaker in sintesi vocale.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/QQWyjFklJjE?si=HLminnfhd6q51GWL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QQWyjFklJjE?si=HLminnfhd6q51GWL" title="Divisioni con i Multipli e carico cognitivo" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>Ricerche testuali in un PDF</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span>Ricerche testuali in un PDF</summary>
           <div class="panel">
             <p>Ideazione, redazione testi, grafiche e montaggio. Speaker in sintesi vocale.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/-z87yJVIeKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-z87yJVIeKY" title="Ricerche testuali in un PDF — tutorial didattico" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>Book to PDF</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span>Book to PDF</summary>
           <div class="panel">
             <p>Ideazione, redazione testi, grafiche e montaggio. Speaker in sintesi vocale.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Hk2XKacO4UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Hk2XKacO4UY" title="Book to PDF — tutorial didattico" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></div>Tangram Stories in Stop Motion</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></span>Tangram Stories in Stop Motion</summary>
           <div class="panel">
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/YKStzWVbtuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YKStzWVbtuA" title="Tangram Stories in Stop Motion" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="form" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>La Piantina degli Auguri Natalizi</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span>La Piantina degli Auguri Natalizi</summary>
           <div class="panel">
             <p>Elaborato finale di un corso sulla programmazione in Python.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/GAtcKbhIaYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GAtcKbhIaYc" title="La Piantina degli Auguri Natalizi — elaborato Python" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="scol" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i></div>Presentazione al termine dell'anno di prova</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-graduation"></use></svg></span>Presentazione al termine dell'anno di prova</summary>
           <div class="panel">
             <p>Mi è servita come presentazione d'appoggio per l'esame orale al termine dell'anno di prova in vista dell'immissione in ruolo. Risulta muta in molte parti proprio perché ci parlavo sopra.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/soRm8f2IwWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/soRm8f2IwWM" title="Presentazione al termine dell'anno di prova" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></div>La ciclovia Destra-Po in Stop Motion</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></span>La ciclovia Destra-Po in Stop Motion</summary>
           <div class="panel">
             <p>Ideazione, redazione testi, riprese (non in esterni) e montaggio.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/j-xcnydohjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j-xcnydohjI" title="La ciclovia Destra-Po in Stop Motion" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-music fa-lg" aria-hidden="true"></i></div>Filastrocca di Carnevale - Partitura iconica</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg></span>Filastrocca di Carnevale - Partitura iconica</summary>
           <div class="panel">
             <p>Montaggio e animazione</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/lZ-StUQxV-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lZ-StUQxV-E" title="Filastrocca di Carnevale — Partitura iconica" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></div>Body Percussion - Natale 2020</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></span>Body Percussion - Natale 2020</summary>
           <div class="panel">
             <p>Riprese e montaggio</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/3K-UmOsAxz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3K-UmOsAxz8" title="Body Percussion — Natale 2020" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></div>Vivaldi - Inverno</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg></span>Vivaldi - Inverno</summary>
           <div class="panel">
             <p>Foto e preparazione dei disegni dei bambini. Allestimento grafico fotorealistico per una presentazione che ha accompagnato un'esecuzione live de "Le Quattro Stagioni" di Vivaldi.</p>
-            <p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYRlW4HeqfAWMs_q4qATobMfgyC25gxpZRMb5jrbAAPlr50ppl4xHS0JaX_ARLiw/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="680" height="411" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+            <p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYRlW4HeqfAWMs_q4qATobMfgyC25gxpZRMb5jrbAAPlr50ppl4xHS0JaX_ARLiw/pubembed?start=true&amp;loop=true&amp;delayms=3000" title="Presentazione Vivaldi — Inverno, Le Quattro Stagioni" frameborder="0" width="680" height="411" loading="lazy" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="lav" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></div>Video per Open Day 2020 - Primaria di Jolanda di Savoia</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></span>Video per Open Day 2020 - Primaria di Jolanda di Savoia</summary>
           <div class="panel">
             <p>Rendering Google Earth e montaggio.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/4_L_EKko4xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4_L_EKko4xs" title="Video per Open Day 2020 — Primaria di Jolanda di Savoia" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="pers" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i></div>Assalto al treno - Stop Motion</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-smile"></use></svg></span>Assalto al treno - Stop Motion</summary>
           <div class="panel">
             <p>Just for fun.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/cL4wnR46KRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cL4wnR46KRg" title="Assalto al treno — Stop Motion" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="pers" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i></div>S-Rotolo</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-smile"></use></svg></span>S-Rotolo</summary>
           <div class="panel">
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/hlTn42LAe7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hlTn42LAe7k" title="S-Rotolo — Stop Motion" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
           </div>
         </details>
       </li>
       <li data-color="pers" class="sx">
         <details class="panel">
-          <summary><div class="icon-sx"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>Questo sito web</summary>
+          <summary><span class="icon-sx"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></span>Questo sito web</summary>
           <div class="panel">
             <p>Eh sì, perché la sfida è stata fare il tutto con puro HTML &hearts; CSS, senza usare codice <del>JavaScript</del>.</p>
           </div>
@@ -176,6 +228,7 @@
       </li>
     </ul>
   </div>
+</main>
 
 </body>
 </html>
