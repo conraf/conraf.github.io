@@ -191,6 +191,9 @@ main {
   .timeline-pres .panel[open] > *:not(summary) {
     animation: none;
   }
+  .timeline-pres .panel div a img {
+    transition: none;
+  }
 }
 
 .timeline .panel[open] summary,
@@ -292,6 +295,26 @@ main {
 
 .timeline-pres li.dx p { text-align: right; }
 .timeline-pres li.sx p { text-align: left; }
+
+.timeline-pres .panel div img,
+.timeline-pres .panel div iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.timeline-pres .panel div iframe {
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.timeline-pres .panel div a img {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.timeline-pres .panel div a:hover img {
+  transform: scale(1.03);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+}
 
 /* =====================
    TIMELINE mobile — colonna sinistra
