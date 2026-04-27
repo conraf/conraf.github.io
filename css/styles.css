@@ -293,6 +293,41 @@ main {
 .timeline-pres li.dx p { text-align: right; }
 .timeline-pres li.sx p { text-align: left; }
 
+/* =====================
+   TIMELINE mobile — colonna sinistra
+   ===================== */
+@media screen and (max-width: 600px) {
+  .timeline:before {
+    left: 11px;
+  }
+
+  .timeline li.dx:before,
+  .timeline li.sx:before {
+    left: 0;
+    right: auto;
+    transform: none;
+  }
+
+  .timeline li.dx .panel,
+  .timeline li.sx .panel {
+    width: calc(100% - 33px);
+    margin-left: 33px;
+    margin-right: 0;
+  }
+
+  .timeline li.dx summary,
+  .timeline li.sx summary,
+  .timeline li.dx p,
+  .timeline li.sx p {
+    text-align: left;
+  }
+
+  .timeline li.dx .icon-dx {
+    left: auto;
+    right: 20px;
+  }
+}
+
 /* Tabelle */
 .timeline-item .content table {
   width: 100%;
