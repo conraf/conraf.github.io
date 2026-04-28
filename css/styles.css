@@ -130,10 +130,24 @@ main {
 
 /* LEGENDA */
 .legenda {
-  padding: 12px;
-  width: 100%;
-  border-collapse: collapse;
+  padding: 12px 20px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.88em;
+  font-weight: 600;
+  color: #333;
+  border: 2px solid transparent;
+}
+
+.badge.scol-cell { background-color: #fff; border-color: var(--color-scol); }
+.badge.form-cell { background-color: #fff; border-color: var(--color-form); }
+.badge.lav-cell  { background-color: #fff; border-color: var(--color-lav); }
 
 /* =====================
    TIMELINE BASE (comune)
