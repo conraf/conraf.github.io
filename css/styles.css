@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --color-scol: #D989B5;
   --color-lav: #FFC95F;
@@ -8,11 +12,18 @@ body {
   margin: 0;
   background: #1D5D9B;
   color: #333;
-  font-family: tahoma, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
   display: flex;
   align-items: center;
   flex-direction: column;
   color-scheme: light dark;
+}
+
+::selection {
+  background-color: #1D5D9B;
+  color: #fff;
 }
 
 /* SKIP LINK */
@@ -44,7 +55,7 @@ nav.navbar a {
   color: white;
   text-shadow: 1px 1px 2px #000000;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 nav.navbar a:hover {
@@ -125,7 +136,19 @@ main {
 }
 
 .wrapper a {
-  color: black;
+  color: #1D5D9B;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: rgba(29, 93, 155, 0.45);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-style 0.1s, text-decoration-color 0.15s, text-decoration-thickness 0.15s;
+}
+
+.wrapper a:hover {
+  text-decoration-style: solid;
+  text-decoration-color: #1D5D9B;
+  text-decoration-thickness: 2px;
 }
 
 /* LEGENDA */
@@ -183,7 +206,7 @@ main {
   padding: 20px;
   margin-bottom: 0;
   transition: background-color 300ms ease, border-color 300ms ease;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* fade-in contenuto panel */
